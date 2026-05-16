@@ -114,7 +114,8 @@ ul { list-style: none; }
 .hero-particles { position: absolute; inset: 0; pointer-events: none; }
 .hero-content { position: relative; z-index: 2; text-align: center; padding: 120px 0 80px; }
 .hero-badge {
-    display: inline-block; padding: 8px 20px; border-radius: var(--radius-xl);
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 20px; border-radius: var(--radius-xl);
     background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
     color: var(--pink-light); font-size: 0.85rem; font-weight: 500;
@@ -139,9 +140,10 @@ ul { list-style: none; }
     display: flex; justify-content: center; align-items: center; gap: 32px;
     margin-top: 60px; animation: fadeInUp 0.8s ease 0.8s both;
 }
-.hero-stat { text-align: center; color: var(--white); }
+.hero-stat { text-align: center; color: var(--white); display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.hero-stat-icon { stroke: var(--pink-light); }
 .hero-stat-number { font-size: 2rem; font-weight: 800; color: var(--pink-light); }
-.hero-stat-label { display: block; font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-top: 4px; }
+.hero-stat-label { display: block; font-size: 0.8rem; color: rgba(255,255,255,0.7); font-weight: 500; letter-spacing: 0.5px; }
 .hero-stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.2); }
 .hero-scroll {
     position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 2;
@@ -212,8 +214,19 @@ ul { list-style: none; }
 .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--pink-light); }
 .service-card:hover::before { transform: scaleX(1); }
 .service-icon { font-size: 2.5rem; margin-bottom: 20px; }
+.service-icon-wrap {
+    width: 56px; height: 56px; border-radius: var(--radius-md);
+    background: rgba(212,144,143,0.1); display: flex; align-items: center;
+    justify-content: center; margin-bottom: 20px; transition: var(--transition);
+}
+.service-card:hover .service-icon-wrap { background: rgba(212,144,143,0.2); }
 .service-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; }
-.service-desc { font-size: 0.9rem; color: var(--gray-500); line-height: 1.7; }
+.service-desc { font-size: 0.9rem; color: var(--gray-500); line-height: 1.7; margin-bottom: 16px; }
+.service-link {
+    font-size: 0.85rem; font-weight: 600; color: var(--pink);
+    transition: var(--transition); display: inline-flex; align-items: center; gap: 4px;
+}
+.service-link:hover { color: var(--magenta); gap: 8px; }
 .service-arrow {
     position: absolute; bottom: 20px; right: 20px;
     font-size: 1.2rem; color: var(--pink); opacity: 0;
@@ -277,6 +290,7 @@ a.contact-item-value:hover { color: var(--pink); }
     padding: 16px 8px; background: var(--white); border-radius: var(--radius-md);
     border: 1px solid var(--gray-200); font-size: 0.8rem; font-weight: 600; text-align: center;
 }
+.trust-badge svg { flex-shrink: 0; }
 .trust-badge-icon { font-size: 1.5rem; }
 
 /* ===== FORM ===== */
@@ -375,4 +389,20 @@ a.contact-item-value:hover { color: var(--pink); }
     .trust-badges { grid-template-columns: 1fr; }
     .section { padding: 64px 0; }
     .about-image-badge { bottom: 16px; right: 16px; }
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
+    position: fixed; bottom: 28px; right: 28px; z-index: 999;
+    width: 60px; height: 60px; border-radius: 50%;
+    background: #25D366; color: white;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    transition: var(--transition);
+    animation: whatsappPulse 2s infinite;
+}
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+@keyframes whatsappPulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 4px 30px rgba(37,211,102,0.6); }
 }
