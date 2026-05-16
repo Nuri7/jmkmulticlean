@@ -109,6 +109,7 @@
                 <li><a href="#reviews" class="nav-link">Reviews</a></li>
                 <li><a href="#waarom" class="nav-link">Waarom JMK</a></li>
                 <li><a href="#proces" class="nav-link">Werkwijze</a></li>
+                <li><a href="#prijzen" class="nav-link">Prijzen</a></li>
                 <li><a href="#contact" class="nav-link nav-cta">Offerte Aanvragen</a></li>
             </ul>
         </div>
@@ -530,7 +531,7 @@
             <div class="section-header reveal-up">
                 <span class="section-label">Neem Contact Op</span>
                 <h2 class="section-title">Gratis Offerte <span class="accent">Aanvragen</span></h2>
-                <p class="section-subtitle">Wilt u een vrijblijvende offerte of meer informatie? Wij reageren binnen 24 uur op uw aanvraag en denken graag met u mee over de beste oplossing. Prijzen vanaf €25 per uur, afhankelijk van de dienst en frequentie.</p>
+                <p class="section-subtitle">Wilt u een vrijblijvende offerte of meer informatie? Wij reageren binnen 24 uur op uw aanvraag en denken graag met u mee over de beste oplossing. Prijzen vanaf €28 per uur bij een wekelijks contract. 10% korting bij vaste opdrachten, 20% korting bij wekelijkse contracten.</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-info reveal-left">
@@ -581,7 +582,7 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper reveal-right">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjkvqbpw" method="POST">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="naam">Naam *</label>
@@ -600,12 +601,26 @@
                             <label for="dienst">Type Dienst</label>
                             <select id="dienst" name="dienst">
                                 <option value="">Selecteer een dienst...</option>
-                                <option value="opleveringsschoonmaak">Opleveringsschoonmaak</option>
-                                <option value="kantoorschoonmaak">Kantoorschoonmaak</option>
-                                <option value="glasbewassing">Glasbewassing</option>
-                                <option value="dieptereiniging">Dieptereiniging</option>
-                                <option value="regelmatig">Regelmatige Schoonmaak</option>
-                                <option value="eenmalig">Eenmalige Schoonmaak</option>
+                                <optgroup label="Kerndiensten">
+                                    <option value="opleveringsschoonmaak">Opleveringsschoonmaak</option>
+                                    <option value="kantoorschoonmaak">Kantoorschoonmaak</option>
+                                    <option value="glasbewassing">Glasbewassing</option>
+                                    <option value="dieptereiniging">Dieptereiniging</option>
+                                    <option value="regelmatig">Regelmatige Schoonmaak</option>
+                                    <option value="eenmalig">Eenmalige Schoonmaak</option>
+                                </optgroup>
+                                <optgroup label="Aanvullende Diensten">
+                                    <option value="airbnb">Vakantiewoning / Airbnb</option>
+                                    <option value="trappenhuis">Trappenhuisschoonmaak (VvE)</option>
+                                    <option value="strijkservice">Strijkservice</option>
+                                    <option value="vloeronderhoud">Vloeronderhoud</option>
+                                    <option value="tapijt">Tapijt- & Bekledingreiniging</option>
+                                    <option value="horeca">Keukenreiniging (Horeca)</option>
+                                    <option value="desinfectie">Desinfectiereiniging</option>
+                                    <option value="zonnepanelen">Zonnepanelen Reinigen</option>
+                                    <option value="gevel">Gevelreiniging</option>
+                                    <option value="industrieel">Industriële Reiniging</option>
+                                </optgroup>
                                 <option value="anders">Anders</option>
                             </select>
                         </div>
@@ -618,6 +633,143 @@
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
                         </button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prijspakketten Section -->
+    <section class="section section-light" id="prijzen">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Transparante Prijzen</span>
+                <h2 class="section-title">Populaire <span class="accent">Pakketten</span></h2>
+                <p class="section-subtitle">Eenvoudig kiezen. 10% korting bij vast contract, 20% korting bij wekelijks contract.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal-up" style="--delay: 0.1s">
+                    <div class="pricing-header">
+                        <h3>Particulier</h3>
+                        <p class="pricing-desc">Woningschoonmaak</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="pricing-amount">€28</span>
+                        <span class="pricing-period">/uur bij wekelijks contract</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Reguliere huisschoonmaak</li>
+                        <li>✓ Strijkservice combineerbaar</li>
+                        <li>✓ Altijd dezelfde schoonmaker</li>
+                        <li>✓ Eco-vriendelijke middelen</li>
+                        <li>✓ 20% korting bij wekelijks</li>
+                    </ul>
+                    <div class="pricing-example">Bijv. 3 uur/week = <strong>€361/maand</strong></div>
+                    <a href="#contact" class="btn btn-outline">Offerte Aanvragen</a>
+                </div>
+                <div class="pricing-card pricing-card-popular reveal-up" style="--delay: 0.2s">
+                    <div class="pricing-badge">Meest Gekozen</div>
+                    <div class="pricing-header">
+                        <h3>Zakelijk</h3>
+                        <p class="pricing-desc">Kantoor & Bedrijfspand</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="pricing-amount">€34</span>
+                        <span class="pricing-period">/uur bij vast contract</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Kantoor- & praktijkschoonmaak</li>
+                        <li>✓ Ook 's avonds & weekends</li>
+                        <li>✓ Professionele BTW-factuur</li>
+                        <li>✓ Desinfectie mogelijk</li>
+                        <li>✓ 10% korting bij vast contract</li>
+                    </ul>
+                    <div class="pricing-example">Bijv. 2 uur/dag = <strong>€1.307/maand</strong></div>
+                    <a href="#contact" class="btn btn-primary">Offerte Aanvragen</a>
+                </div>
+                <div class="pricing-card reveal-up" style="--delay: 0.3s">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p class="pricing-desc">Eenmalig & Specialistisch</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="pricing-amount">€38</span>
+                        <span class="pricing-period">/uur eenmalig tarief</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Opleveringsschoonmaak</li>
+                        <li>✓ Dieptereiniging</li>
+                        <li>✓ Gevel- & glasbewassing</li>
+                        <li>✓ Spoedservice mogelijk</li>
+                        <li>✓ Vaste prijs per woning op aanvraag</li>
+                    </ul>
+                    <div class="pricing-example">Bijv. appartement 80m² = <strong>vanaf €350</strong></div>
+                    <a href="#contact" class="btn btn-outline">Offerte Aanvragen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-gray" id="faq">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Veelgestelde Vragen</span>
+                <h2 class="section-title">Heeft u een <span class="accent">Vraag</span>?</h2>
+            </div>
+            <div class="faq-grid reveal-up">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Wat kost een opleveringsschoonmaak?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Een opleveringsschoonmaak kost gemiddeld €38 per uur (excl. BTW). Voor een appartement tot 80m² rekent u op €350 - €500. Wij geven altijd een vaste prijs na een korte inspectie, zodat u vooraf precies weet wat het kost.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>In welke gebieden werken jullie?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Wij werken in heel Noord- en Zuid-Holland: Amsterdam, Haarlem, Leiden, Den Haag, Rotterdam, Utrecht en omgeving. Ons kantoor is gevestigd in Abbenes (Haarlemmermeer).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Zijn jullie verzekerd en betrouwbaar?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ja. JMK Multiclean is KVK-geregistreerd (85364207), volledig verzekerd en ons team is VOG-gescreend. Wij werken met milieuvriendelijke en kindveilige schoonmaakmiddelen.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Krijg ik altijd dezelfde schoonmaker?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ja, bij regelmatige schoonmaak koppelen wij u aan een vaste schoonmaker die uw woning of kantoor kent. Bij ziekte of vakantie zorgen wij voor een gescreende vervanger.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Hoe werkt de korting bij vast contract?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Bij een vast contract (tweewekelijks of maandelijks) ontvangt u 10% korting op het uurtarief. Bij een wekelijks contract krijgt u zelfs 20% korting. Zo bespaart u tot €1.092 per jaar.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Kunnen jullie ook op korte termijn komen?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ja, wij bieden spoedservice aan voor opdrachten binnen 24 uur. Hiervoor geldt een toeslag van 25%. Neem contact op via telefoon of WhatsApp voor directe beschikbaarheid.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -663,7 +815,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 JMK Multiclean. Alle rechten voorbehouden. | KVK: 85364207</p>
+                <p>&copy; 2026 JMK Multiclean. Alle rechten voorbehouden. | KVK: 85364207 | <a href="privacy.html" style="color:var(--gray-400)">Privacy & Cookies</a></p>
             </div>
         </div>
     </footer>

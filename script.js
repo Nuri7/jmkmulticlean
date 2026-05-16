@@ -89,18 +89,31 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ===== FORM =====
+// ===== FORM (Formspree) =====
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
+    const form = this;
     btn.innerHTML = '<span>Verzenden...</span>';
     btn.disabled = true;
-    setTimeout(() => {
-        document.getElementById('successModal').classList.add('active');
-        this.reset();
+    
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if (response.ok) {
+            document.getElementById('successModal').classList.add('active');
+            form.reset();
+        } else {
+            alert('Er ging iets mis. Probeer het opnieuw of bel ons op +31 6 23 24 22 88.');
+        }
+    }).catch(() => {
+        alert('Er ging iets mis. Probeer het opnieuw of bel ons op +31 6 23 24 22 88.');
+    }).finally(() => {
         btn.innerHTML = '<span>Offerte Aanvragen</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>';
         btn.disabled = false;
-    }, 1500);
+    });
 });
 
 // ===== SMOOTH NAV LINK STYLE =====
