@@ -291,6 +291,29 @@ ul { list-style: none; }
 }
 .service-area-badge svg { flex-shrink: 0; }
 
+/* ===== EXTRA SERVICES ===== */
+.extra-services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.extra-service-card {
+    display: flex; align-items: flex-start; gap: 16px;
+    padding: 20px 24px; border-radius: var(--radius-md);
+    background: var(--white); border: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+.extra-service-card:hover { border-color: var(--pink-light); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+.extra-service-icon {
+    width: 44px; height: 44px; min-width: 44px;
+    background: rgba(212,144,143,0.1); border-radius: var(--radius-sm);
+    display: flex; align-items: center; justify-content: center;
+}
+.extra-service-title { font-size: 0.95rem; font-weight: 700; color: var(--gray-800); margin-bottom: 4px; }
+.extra-service-desc { font-size: 0.82rem; color: var(--gray-600); line-height: 1.6; }
+.extra-services-cta {
+    text-align: center; margin-top: 40px;
+    padding: 32px; background: rgba(212,144,143,0.06);
+    border-radius: var(--radius-lg); border: 1px dashed rgba(212,144,143,0.3);
+}
+.extra-services-cta p { margin-bottom: 16px; color: var(--gray-700); font-size: 0.95rem; }
+
 /* ===== PROCESS ===== */
 .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; position: relative; }
 .process-step { text-align: center; position: relative; padding: 0 12px; }
@@ -417,6 +440,7 @@ a.contact-item-value:hover { color: var(--pink); }
     .nav-cta { text-align: center; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .services-grid { grid-template-columns: 1fr; }
+    .extra-services-grid { grid-template-columns: 1fr; }
     .testimonials-grid { grid-template-columns: 1fr; }
     .benefits-grid { grid-template-columns: 1fr; }
     .process-grid { grid-template-columns: 1fr; gap: 40px; }
