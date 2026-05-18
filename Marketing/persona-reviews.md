@@ -1,7 +1,7 @@
 # JMK Multiclean — Persona Reviews & Website Evaluation
 
 **Date:** 16 May 2026  
-**Website:** [nuri7.github.io/jmkmulticlean](https://nuri7.github.io/jmkmulticlean/)
+**Website:** [jmkmulticlean.nl](https://jmkmulticlean.nl)
 
 ---
 

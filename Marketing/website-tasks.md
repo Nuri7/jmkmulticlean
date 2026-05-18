@@ -1,6 +1,6 @@
 # JMK Multiclean — Website Improvements Tracker
 
-**Website:** [nuri7.github.io/jmkmulticlean](https://nuri7.github.io/jmkmulticlean/)  
+**Website:** [jmkmulticlean.nl](https://jmkmulticlean.nl)  
 **Last Updated:** 16 May 2026
 
 ---
@@ -49,7 +49,7 @@
 
 ### Deployment
 - [x] GitHub repository: github.com/Nuri7/jmkmulticlean
-- [x] GitHub Pages live: nuri7.github.io/jmkmulticlean
+- [x] GitHub Pages live: jmkmulticlean.nl
 - [x] Auto-deploy on push to main
 
 ---

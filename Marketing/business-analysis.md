@@ -11,7 +11,7 @@
 | Onderdeel | Wat ze goed vindt | Wat ze anders wil |
 |-----------|-------------------|-------------------|
 | **Website** | Professioneel design, VOG, testimonials | Wil echte Google Reviews zien, niet alleen op de website |
-| **Prijzen** | €28/uur wekelijks is betaalbaar | Wil prijs op de website zien, niet alleen "vanaf" — geef een calculator |
+| **Prijzen** | €32/uur wekelijks is betaalbaar | Wil prijs op de website zien, niet alleen "vanaf" — geef een calculator |
 | **Marketing** | WhatsApp contact is handig | Zou JMK eerder vinden via Google Maps dan via directe URL |
 
 > *"Ik zoek op Google: schoonmaakbedrijf Amsterdam. Als jullie daar niet staan, vind ik jullie niet."*
@@ -59,7 +59,7 @@
 | Onderdeel | Wat ze goed vindt | Wat ze anders wil |
 |-----------|-------------------|-------------------|
 | **Website** | Kindveilig, vaste schoonmaker, VOG | Wil een foto van het team en een persoonlijke kennismaking |
-| **Prijzen** | €28/uur wekelijks is scherp | Wil een vast maandbedrag weten (bijv. "3 uur/week = €X/maand") |
+| **Prijzen** | €32/uur wekelijks is scherp | Wil een vast maandbedrag weten (bijv. "3 uur/week = €X/maand") |
 | **Marketing** | Anita-testimonial is herkenbaar | Zou JMK eerder vinden via vriendinnen of buurtgroep op Facebook |
 
 > *"Ik wil weten wat het per maand kost, niet per uur. En ik wil zien wie er komt."*

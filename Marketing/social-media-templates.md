@@ -19,7 +19,7 @@
 > ✅ Eco-vriendelijke producten  
 >
 > 📞 Bel: +31 6 23 24 22 88  
-> 🌐 nuri7.github.io/jmkmulticlean  
+> 🌐 jmkmulticlean.nl  
 >
 > #schoonmaak #schoonmaakbedrijf #amsterdam #haarlem #denhaag #rotterdam #professioneel
 
@@ -34,7 +34,7 @@
 > 🔹 10% korting bij een vast contract
 > 🔹 20% korting bij wekelijkse schoonmaak
 >
-> Voorbeeld: wekelijks 3 uur = slechts €361/maand!
+> Voorbeeld: wekelijks 3 uur = slechts €413/maand!
 >
 > ➡️ Vraag nu een gratis offerte aan
 > 📞 +31 6 23 24 22 88
@@ -72,7 +72,7 @@
 > ✅ Klaar voor de volgende gast
 >
 > 📅 Flexibele planning, ook op korte termijn
-> 💰 Vanaf €28/uur bij vast contract
+> 💰 Vanaf €32/uur bij vast contract
 >
 > #airbnb #vakantiewoning #schoonmaak #gastvrij #booking
 

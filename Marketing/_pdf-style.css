@@ -1,0 +1,242 @@
+@page {
+  size: A4;
+  margin: 22mm 18mm 20mm 18mm;
+  @bottom-center {
+    content: "JMK Multiclean  ·  jmkmulticlean.nl  ·  +31 6 23 24 22 88";
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #9CA3AF;
+  }
+  @bottom-right {
+    content: "Pagina " counter(page) " / " counter(pages);
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 8pt;
+    color: #9CA3AF;
+  }
+}
+
+@page :first {
+  margin: 0;
+  @bottom-center { content: ""; }
+  @bottom-right { content: ""; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1F2937;
+  font-size: 10.5pt;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.cover {
+  height: 297mm;
+  background: linear-gradient(150deg, #1F2937 0%, #3A2A33 55%, #C0627E 130%);
+  color: #FFFFFF;
+  padding: 45mm 22mm;
+  page-break-after: always;
+  position: relative;
+}
+
+.cover .logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  background: #FFFFFF;
+  padding: 10px;
+  object-fit: contain;
+  margin-bottom: 38mm;
+}
+
+.cover .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11pt;
+  color: #F2D0CF;
+  margin-bottom: 14px;
+}
+
+.cover h1 {
+  font-size: 38pt;
+  line-height: 1.12;
+  margin: 0 0 18px 0;
+  font-weight: 800;
+}
+
+.cover .subtitle {
+  font-size: 13pt;
+  color: #E5E7EB;
+  max-width: 130mm;
+}
+
+.cover .meta {
+  position: absolute;
+  bottom: 38mm;
+  left: 22mm;
+  right: 22mm;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10pt;
+  color: #E5E7EB;
+}
+
+.content { padding: 0; }
+
+h2 {
+  font-size: 17pt;
+  color: #1F2937;
+  border-bottom: 3px solid #C0627E;
+  padding-bottom: 6px;
+  margin: 30px 0 14px 0;
+  page-break-after: avoid;
+}
+
+h3 {
+  font-size: 13pt;
+  color: #B8706F;
+  margin: 22px 0 8px 0;
+  page-break-after: avoid;
+}
+
+h4 {
+  font-size: 11pt;
+  color: #374151;
+  margin: 16px 0 6px 0;
+}
+
+p { margin: 8px 0; }
+
+a { color: #C0627E; text-decoration: none; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px 0;
+  font-size: 9.5pt;
+  page-break-inside: avoid;
+}
+
+th {
+  background: #1F2937;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 8px 10px;
+  font-weight: 600;
+}
+
+td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #E5E7EB;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td { background: #F9FAFB; }
+
+strong { color: #1F2937; }
+
+blockquote {
+  margin: 14px 0;
+  padding: 12px 18px;
+  background: #F2D0CF33;
+  border-left: 4px solid #C0627E;
+  font-style: italic;
+  color: #374151;
+}
+
+ul, ol { margin: 8px 0; padding-left: 22px; }
+li { margin: 4px 0; }
+
+.callout {
+  background: #1F2937;
+  color: #FFFFFF;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin: 18px 0;
+  page-break-inside: avoid;
+}
+.callout strong { color: #F2D0CF; }
+
+.kpi-row {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+}
+.kpi {
+  flex: 1;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  page-break-inside: avoid;
+}
+.kpi .num {
+  font-size: 22pt;
+  font-weight: 800;
+  color: #C0627E;
+  display: block;
+}
+.kpi .lbl {
+  font-size: 8.5pt;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-break { page-break-before: always; }
+
+.tag {
+  display: inline-block;
+  background: #F2D0CF;
+  color: #8a3a52;
+  font-size: 8pt;
+  padding: 2px 9px;
+  border-radius: 999px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.post {
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 0;
+  margin: 16px 0;
+  page-break-inside: avoid;
+  overflow: hidden;
+}
+.post .post-head {
+  background: #F9FAFB;
+  border-bottom: 1px solid #E5E7EB;
+  padding: 10px 16px;
+  font-weight: 700;
+  color: #1F2937;
+  font-size: 10.5pt;
+}
+.post .post-head .platform {
+  float: right;
+  font-size: 8pt;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.post .post-body { padding: 14px 16px; white-space: pre-wrap; font-size: 10pt; }
+.post .post-foot {
+  padding: 8px 16px 12px 16px;
+  font-size: 8.5pt;
+  color: #6B7280;
+}
+.hash { color: #C0627E; font-weight: 600; }
+
+.toc { margin: 10px 0 0 0; }
+.toc li { margin: 7px 0; font-size: 11pt; }
+.lead {
+  font-size: 11.5pt;
+  color: #374151;
+  border-left: 4px solid #C0627E;
+  padding-left: 16px;
+  margin: 18px 0;
+}

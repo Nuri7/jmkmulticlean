@@ -1,7 +1,7 @@
 # JMK Multiclean — SEO Audit & Improvement Plan
 
 **Date:** 16 May 2026  
-**Website:** [nuri7.github.io/jmkmulticlean](https://nuri7.github.io/jmkmulticlean/)
+**Website:** [jmkmulticlean.nl](https://jmkmulticlean.nl)
 
 ---
 
@@ -75,7 +75,7 @@
 
 - [ ] **Submit sitemap to Google Search Console**
   - Go to [Google Search Console](https://search.google.com/search-console)
-  - Add property: `nuri7.github.io/jmkmulticlean` (or custom domain)
+  - Add property: `jmkmulticlean.nl` (or custom domain)
   - Submit sitemap.xml
   - Request indexing for the homepage
   - Time: ~10 minutes
