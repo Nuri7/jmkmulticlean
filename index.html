@@ -38,59 +38,116 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "https://jmkmulticlean.nl/",
-        "name": "JMK Multiclean",
-        "description": "Professionele schoonmaakdiensten voor particulieren en bedrijven in Noord- en Zuid-Holland.",
-        "url": "https://jmkmulticlean.nl/",
-        "telephone": "+31623242288",
-        "email": "info@jmkmulticlean.nl",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Langerak 52",
-            "addressLocality": "Abbenes",
-            "postalCode": "2157PH",
-            "addressCountry": "NL"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 52.2658,
-            "longitude": 4.5633
-        },
-        "image": "https://jmkmulticlean.nl/images/logo.png",
-        "priceRange": "€€",
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-            "opens": "08:00",
-            "closes": "20:00"
-        },
-        "areaServed": [
-            {"@type": "City", "name": "Amsterdam"},
-            {"@type": "City", "name": "Haarlem"},
-            {"@type": "City", "name": "Leiden"},
-            {"@type": "City", "name": "Den Haag"},
-            {"@type": "City", "name": "Rotterdam"},
-            {"@type": "City", "name": "Utrecht"}
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Schoonmaakdiensten",
-            "itemListElement": [
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Opleveringsschoonmaak"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kantoorschoonmaak"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Glasbewassing"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dieptereiniging"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Regelmatige Schoonmaak"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Eenmalige Schoonmaak"}}
-            ]
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "3",
-            "bestRating": "5"
-        }
+        "@graph": [
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://jmkmulticlean.nl/",
+                "name": "JMK Multiclean",
+                "description": "Professionele schoonmaakdiensten voor particulieren en bedrijven in Noord- en Zuid-Holland.",
+                "url": "https://jmkmulticlean.nl/",
+                "telephone": "+31623242288",
+                "email": "info@jmkmulticlean.nl",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Langerak 52",
+                    "addressLocality": "Abbenes",
+                    "postalCode": "2157PH",
+                    "addressCountry": "NL"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 52.2658,
+                    "longitude": 4.5633
+                },
+                "image": "https://jmkmulticlean.nl/images/logo.png",
+                "priceRange": "€€",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                    "opens": "08:00",
+                    "closes": "20:00"
+                },
+                "areaServed": [
+                    {"@type": "City", "name": "Amsterdam"},
+                    {"@type": "City", "name": "Haarlem"},
+                    {"@type": "City", "name": "Leiden"},
+                    {"@type": "City", "name": "Den Haag"},
+                    {"@type": "City", "name": "Rotterdam"},
+                    {"@type": "City", "name": "Utrecht"}
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Schoonmaakdiensten",
+                    "itemListElement": [
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Opleveringsschoonmaak"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kantoorschoonmaak"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Glasbewassing"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dieptereiniging"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Regelmatige Schoonmaak"}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Eenmalige Schoonmaak"}}
+                    ]
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5.0",
+                    "reviewCount": "3",
+                    "bestRating": "5"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Wat kost een opleveringsschoonmaak?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Een opleveringsschoonmaak kost gemiddeld €42 per uur (excl. BTW). Voor een appartement tot 80m² rekent u op €400 - €550. Wij geven altijd een vaste prijs na een korte inspectie, zodat u vooraf precies weet wat het kost."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "In welke gebieden werken jullie?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Wij werken in heel Noord- en Zuid-Holland: Amsterdam, Haarlem, Leiden, Den Haag, Rotterdam, Utrecht en omgeving. Ons kantoor is gevestigd in Abbenes (Haarlemmermeer)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Zijn jullie verzekerd en betrouwbaar?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja. JMK Multiclean is KVK-geregistreerd (85364207), volledig verzekerd en ons team is VOG-gescreend. Wij werken met milieuvriendelijke en kindveilige schoonmaakmiddelen."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Krijg ik altijd dezelfde schoonmaker?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja, bij regelmatige schoonmaak koppelen wij u aan een vaste schoonmaker die uw woning of kantoor kent. Bij ziekte of vakantie zorgen wij voor een gescreende vervanger."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Hoe werkt de korting bij vast contract?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Bij een vast contract (tweewekelijks of maandelijks) ontvangt u 10% korting op het uurtarief. Bij een wekelijks contract krijgt u zelfs 20% korting. Zo bespaart u tot €1.248 per jaar."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Kunnen jullie ook op korte termijn komen?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ja, wij bieden spoedservice aan voor opdrachten binnen 24 uur. Hiervoor geldt een toeslag van 25%. Neem contact op via telefoon of WhatsApp voor directe beschikbaarheid."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>
