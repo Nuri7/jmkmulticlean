@@ -2,3 +2,6 @@ email_setup_*.md
 *.mobileconfig
 .claude/settings.local.json
 .claude/launch.json
+
+# Confidential business/financial/legal documents — must NOT be published
+finances/
