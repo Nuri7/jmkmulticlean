@@ -1,3 +1,4 @@
 email_setup_*.md
 *.mobileconfig
 .claude/settings.local.json
+.claude/launch.json

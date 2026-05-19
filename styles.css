@@ -27,7 +27,7 @@
 
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; scroll-padding-top: 150px; }
 body {
     font-family: 'Inter', -apple-system, sans-serif;
     color: var(--gray-800);
@@ -63,14 +63,15 @@ ul { list-style: none; }
     border-bottom-color: var(--gray-200);
     box-shadow: var(--shadow-sm);
 }
-.nav-container { display: flex; align-items: center; justify-content: space-between; }
-.nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.25rem; }
-.nav-logo-img { width: 96px; height: 96px; border-radius: 50%; object-fit: contain; }
-.nav-menu { display: flex; align-items: center; gap: 8px; }
+.nav-container { display: flex; align-items: center; justify-content: space-between; max-width: 1440px; }
+.nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.25rem; flex-shrink: 0; }
+.nav-logo-img { width: 120px; height: 120px; border-radius: 50%; object-fit: contain; }
+.nav-logo-text { white-space: nowrap; }
+.nav-menu { display: flex; align-items: center; gap: 8px; flex-wrap: nowrap; }
 .nav-link {
     padding: 8px 16px; border-radius: var(--radius-sm);
     font-size: 0.9rem; font-weight: 500; color: var(--gray-700);
-    transition: var(--transition);
+    transition: var(--transition); white-space: nowrap;
 }
 .nav-link:hover { color: var(--pink); background: var(--gray-50); }
 .nav-cta {
@@ -469,7 +470,7 @@ a.contact-item-value:hover { color: var(--pink); }
     .process-step-connector { display: none; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .nav-menu {
         position: fixed; top: 0; right: -100%; width: 280px; height: 100vh;
         background: var(--white); flex-direction: column; padding: 80px 32px 32px;
@@ -482,6 +483,8 @@ a.contact-item-value:hover { color: var(--pink); }
     .nav-toggle.active span:nth-child(2) { opacity: 0; }
     .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
     .nav-cta { text-align: center; }
+}
+@media (max-width: 768px) {
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .services-grid { grid-template-columns: 1fr; }
     .extra-services-grid { grid-template-columns: 1fr; }
