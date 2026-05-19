@@ -65,7 +65,7 @@ ul { list-style: none; }
 }
 .nav-container { display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.25rem; }
-.nav-logo-img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+.nav-logo-img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; }
 .nav-menu { display: flex; align-items: center; gap: 8px; }
 .nav-link {
     padding: 8px 16px; border-radius: var(--radius-sm);
