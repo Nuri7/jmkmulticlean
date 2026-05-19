@@ -532,3 +532,19 @@ a.contact-item-value:hover { color: var(--pink); }
     0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
     50% { box-shadow: 0 4px 30px rgba(37,211,102,0.6); }
 }
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .reveal-up, .reveal-left, .reveal-right {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    .hero-particles { display: none; }
+}
