@@ -216,7 +216,6 @@ ul { list-style: none; }
 }
 .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--pink-light); }
 .service-card:hover::before { transform: scaleX(1); }
-.service-icon { font-size: 2.5rem; margin-bottom: 20px; }
 .service-icon-wrap {
     width: 56px; height: 56px; border-radius: var(--radius-md);
     background: rgba(212,144,143,0.1); display: flex; align-items: center;
@@ -230,12 +229,6 @@ ul { list-style: none; }
     transition: var(--transition); display: inline-flex; align-items: center; gap: 4px;
 }
 .service-link:hover { color: var(--magenta); gap: 8px; }
-.service-arrow {
-    position: absolute; bottom: 20px; right: 20px;
-    font-size: 1.2rem; color: var(--pink); opacity: 0;
-    transition: var(--transition); transform: translateX(-8px);
-}
-.service-card:hover .service-arrow { opacity: 1; transform: translateX(0); }
 
 /* ===== BENEFITS ===== */
 .benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
@@ -399,7 +392,6 @@ a.contact-item-value:hover { color: var(--pink); }
     border: 1px solid var(--gray-200); font-size: 0.8rem; font-weight: 600; text-align: center;
 }
 .trust-badge svg { flex-shrink: 0; }
-.trust-badge-icon { font-size: 1.5rem; }
 
 /* ===== FORM ===== */
 .contact-form {
