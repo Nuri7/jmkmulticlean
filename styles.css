@@ -9,7 +9,9 @@
     --gray-100: #F3F4F6;
     --gray-200: #E5E7EB;
     --gray-300: #D1D5DB;
+    --gray-400: #9CA3AF;
     --gray-500: #6B7280;
+    --gray-600: #4B5563;
     --gray-700: #374151;
     --gray-800: #1F2937;
     --gray-900: #111827;
@@ -105,7 +107,7 @@ ul { list-style: none; }
 .hero {
     position: relative; min-height: 100vh;
     display: flex; align-items: center; justify-content: center;
-    background: url('images/hero-bg.png') center/cover no-repeat;
+    background: url('images/hero-bg.webp') center/cover no-repeat;
     overflow: hidden;
 }
 .hero-overlay {
@@ -471,6 +473,8 @@ a.contact-item-value:hover { color: var(--pink); }
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 1200px) {
+    html { scroll-padding-top: 120px; }
+    .nav-logo-img { width: 84px; height: 84px; }
     .nav-menu {
         position: fixed; top: 0; right: -100%; width: 280px; height: 100vh;
         background: var(--white); flex-direction: column; padding: 80px 32px 32px;
@@ -485,6 +489,9 @@ a.contact-item-value:hover { color: var(--pink); }
     .nav-cta { text-align: center; }
 }
 @media (max-width: 768px) {
+    html { scroll-padding-top: 90px; }
+    .nav-logo-img { width: 60px; height: 60px; }
+    .nav-logo-text { font-size: 1.05rem; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .services-grid { grid-template-columns: 1fr; }
     .extra-services-grid { grid-template-columns: 1fr; }

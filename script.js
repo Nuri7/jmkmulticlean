@@ -8,13 +8,17 @@ window.addEventListener('scroll', () => {
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('active');
+    const isOpen = navToggle.classList.toggle('active');
     navMenu.classList.toggle('active');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    navToggle.setAttribute('aria-label', isOpen ? 'Menu sluiten' : 'Menu openen');
 });
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         navToggle.classList.remove('active');
         navMenu.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Menu openen');
     });
 });
 
@@ -30,25 +34,6 @@ const revealObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.15 });
 revealElements.forEach(el => revealObserver.observe(el));
-
-// ===== COUNTER ANIMATION =====
-const counters = document.querySelectorAll('.hero-stat-number');
-const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const target = parseInt(entry.target.dataset.count);
-            let current = 0;
-            const increment = target / 60;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) { current = target; clearInterval(timer); }
-                entry.target.textContent = Math.floor(current);
-            }, 25);
-            counterObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.5 });
-counters.forEach(c => counterObserver.observe(c));
 
 // ===== SPARKLE PARTICLES =====
 const particlesContainer = document.getElementById('heroParticles');
